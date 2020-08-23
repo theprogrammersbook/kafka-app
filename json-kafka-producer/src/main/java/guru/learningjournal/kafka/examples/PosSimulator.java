@@ -19,13 +19,13 @@ public class PosSimulator {
     private static final Logger logger = LogManager.getLogger();
 
     public static void main(String[] args) {
-        if (args.length < 3) {
+       /* if (args.length < 3) {
             System.out.println("Please provide command line arguments: topicName noOfProducers produceSpeed");
             System.exit(-1);
-        }
-        String topicName = args[0];
-        int noOfProducers = new Integer(args[1]);
-        int produceSpeed = new Integer(args[2]);
+        }*/
+        String topicName = "demo-3-twitter";
+        int noOfProducers = new Integer(3);
+        int produceSpeed = new Integer(100);
 
         Properties properties = new Properties();
         properties.put(ProducerConfig.CLIENT_ID_CONFIG, AppConfigs.applicationID);
